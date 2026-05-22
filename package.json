@@ -1,0 +1,26 @@
+{
+  "name": "mot-to-ascii",
+  "displayName": "mot-to-ascii",
+  "description": "VS Code extension for decoding data from Motorola S-Record files.",
+  "version": "0.0.1",
+  "publisher": "donaldomoreno",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:mot.loadConfig"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mot.loadConfig",
+        "title": "Load MOT Config File",
+        "category": "MOT"
+      }
+    ]
+  }
+}
